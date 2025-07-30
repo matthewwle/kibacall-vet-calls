@@ -47,11 +47,6 @@ const HowItWorks = () => {
             const IconComponent = step.icon;
             return (
               <div key={index} className="relative">
-                {/* Connection line */}
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-primary to-primary/30 z-10"></div>
-                )}
-                
                 <div className="text-center">
                   <div className="relative inline-flex items-center justify-center w-32 h-32 bg-primary rounded-full mb-6 shadow-lg">
                     <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center">

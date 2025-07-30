@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import dogLogo from "@/assets/dog-logo.png";
+import dogLogo from "@/assets/dog-logo-outline.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 flex items-center justify-center">
-              <img src={dogLogo} alt="Kibacall Dog Logo" className="w-8 h-8" />
+              <img src={dogLogo} alt="Kibacall Dog Logo" className="w-8 h-8 filter brightness-0" style={{filter: 'brightness(0) saturate(100%) invert(60%) sepia(68%) saturate(2507%) hue-rotate(179deg) brightness(95%) contrast(87%)'}} />
             </div>
             <span className="font-heading text-2xl font-bold text-foreground">
               Kibacall

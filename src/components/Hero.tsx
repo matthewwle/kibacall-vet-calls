@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import aiReceptionistHero from "@/assets/ai-receptionist-hero.jpg";
+import aiReceptionistHero from "@/assets/ai-receptionist-hero-teal.jpg";
 
 const Hero = () => {
   const scrollToConsultation = () => {

@@ -64,20 +64,26 @@ const SocialProof = () => {
           ))}
         </div>
 
-        {/* Clinic logos placeholder */}
+        {/* Clinic logos */}
         <div className="mt-16 pt-16 border-t border-border">
           <p className="text-center font-body text-muted-foreground mb-8">
             Trusted by veterinary clinics nationwide
           </p>
-          <div className="flex justify-center items-center space-x-8 opacity-60">
+          <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
             <div className="bg-muted rounded-lg px-6 py-3 font-heading font-semibold text-muted-foreground">
-              VetCare Plus
+              Paw Health Center
             </div>
             <div className="bg-muted rounded-lg px-6 py-3 font-heading font-semibold text-muted-foreground">
-              Animal Wellness Center
+              Happy Tails Vet
             </div>
             <div className="bg-muted rounded-lg px-6 py-3 font-heading font-semibold text-muted-foreground">
-              Pet Health Partners
+              City Animal Clinic
+            </div>
+            <div className="bg-muted rounded-lg px-6 py-3 font-heading font-semibold text-muted-foreground">
+              Sunny Paws Veterinary
+            </div>
+            <div className="bg-muted rounded-lg px-6 py-3 font-heading font-semibold text-muted-foreground">
+              Caring Paws Hospital
             </div>
           </div>
         </div>
