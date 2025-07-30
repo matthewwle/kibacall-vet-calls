@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
+import dogLogo from "@/assets/dog-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,8 +18,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Phone className="w-5 h-5 text-primary-foreground" />
+            <div className="w-8 h-8 flex items-center justify-center">
+              <img src={dogLogo} alt="Kibacall Dog Logo" className="w-8 h-8" />
             </div>
             <span className="font-heading text-2xl font-bold text-foreground">
               Kibacall

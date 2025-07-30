@@ -7,8 +7,8 @@
 @layer base {
   :root {
     /* Brand Colors */
-    --brand-teal: 172 53% 46%;        /* #3BB3A9 - Primary brand color */
-    --brand-yellow: 44 100% 70%;      /* #FFD166 - CTA and accent color */
+    --brand-teal: 198 69% 58%;        /* #4DABDB - Primary brand color */
+    --brand-yellow: 44 94% 63%;       /* #F9C74F - CTA and accent color */
     --brand-slate: 229 18% 21%;       /* #2B2D42 - Dark text color */
     --brand-grey-light: 0 0% 97%;     /* #F7F7F7 - Light backgrounds */
     
@@ -22,7 +22,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 229 18% 21%;
 
-    --primary: 172 53% 46%;           /* Teal */
+    --primary: 198 69% 58%;           /* Teal */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 97%;            /* Light grey */
@@ -31,7 +31,7 @@
     --muted: 0 0% 97%;
     --muted-foreground: 229 18% 45%;
 
-    --accent: 44 100% 70%;            /* Yellow for CTAs */
+    --accent: 44 94% 63%;             /* Yellow for CTAs */
     --accent-foreground: 229 18% 21%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,7 +39,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 172 53% 46%;
+    --ring: 198 69% 58%;
 
     --radius: 0.5rem;
 
