@@ -18,7 +18,18 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'heading': ['Poppins', 'sans-serif'],
+				'body': ['Lato', 'sans-serif'],
+			},
 			colors: {
+				// Brand-specific colors
+				'brand-teal': 'hsl(var(--brand-teal))',
+				'brand-yellow': 'hsl(var(--brand-yellow))',
+				'brand-slate': 'hsl(var(--brand-slate))',
+				'brand-grey-light': 'hsl(var(--brand-grey-light))',
+				
+				// Core design system
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

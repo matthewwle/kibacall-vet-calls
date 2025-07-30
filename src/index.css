@@ -2,39 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Kibacall Design System - Professional, warm, conversion-focused veterinary AI service */
 
 @layer base {
   :root {
+    /* Brand Colors */
+    --brand-teal: 172 53% 46%;        /* #3BB3A9 - Primary brand color */
+    --brand-yellow: 44 100% 70%;      /* #FFD166 - CTA and accent color */
+    --brand-slate: 229 18% 21%;       /* #2B2D42 - Dark text color */
+    --brand-grey-light: 0 0% 97%;     /* #F7F7F7 - Light backgrounds */
+    
+    /* Core Design System */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 229 18% 21%;        /* Dark slate for text */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 229 18% 21%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 229 18% 21%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 172 53% 46%;           /* Teal */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 97%;            /* Light grey */
+    --secondary-foreground: 229 18% 21%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 97%;
+    --muted-foreground: 229 18% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 44 100% 70%;            /* Yellow for CTAs */
+    --accent-foreground: 229 18% 21%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 172 53% 46%;
 
     --radius: 0.5rem;
 

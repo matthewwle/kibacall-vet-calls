@@ -1,0 +1,106 @@
+import { Button } from "@/components/ui/button";
+import { Phone, Menu } from "lucide-react";
+import { useState } from "react";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    section?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              <Phone className="w-5 h-5 text-primary-foreground" />
+            </div>
+            <span className="font-heading text-2xl font-bold text-foreground">
+              Kibacall
+            </span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            <button
+              onClick={() => scrollToSection('features')}
+              className="font-body text-foreground hover:text-primary transition-colors"
+            >
+              Features
+            </button>
+            <button
+              onClick={() => scrollToSection('testimonials')}
+              className="font-body text-foreground hover:text-primary transition-colors"
+            >
+              Testimonials
+            </button>
+            <button
+              onClick={() => scrollToSection('how-it-works')}
+              className="font-body text-foreground hover:text-primary transition-colors"
+            >
+              How It Works
+            </button>
+          </nav>
+
+          {/* Desktop CTA */}
+          <div className="hidden md:block">
+            <Button 
+              variant="cta"
+              onClick={() => scrollToSection('final-cta')}
+            >
+              Get Started
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <Menu className="w-6 h-6 text-foreground" />
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border bg-background">
+            <nav className="flex flex-col gap-4">
+              <button
+                onClick={() => scrollToSection('features')}
+                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Features
+              </button>
+              <button
+                onClick={() => scrollToSection('testimonials')}
+                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Testimonials
+              </button>
+              <button
+                onClick={() => scrollToSection('how-it-works')}
+                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                How It Works
+              </button>
+              <Button 
+                variant="cta"
+                onClick={() => scrollToSection('final-cta')}
+                className="mt-4"
+              >
+                Get Started
+              </Button>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
