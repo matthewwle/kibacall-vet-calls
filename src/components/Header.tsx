@@ -36,16 +36,16 @@ const Header = () => {
               Home
             </Link>
             <Link 
-              to="/case-studies"
-              className="font-body text-foreground hover:text-primary transition-colors"
-            >
-              Case Studies
-            </Link>
-            <Link 
               to="/about"
               className="font-body text-foreground hover:text-primary transition-colors"
             >
               About
+            </Link>
+            <Link 
+              to="/case-studies"
+              className="font-body text-foreground hover:text-primary transition-colors"
+            >
+              Case Studies
             </Link>
           </nav>
 
@@ -79,16 +79,16 @@ const Header = () => {
                 Home
               </Link>
               <Link 
-                to="/case-studies"
-                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
-              >
-                Case Studies
-              </Link>
-              <Link 
                 to="/about"
                 className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
               >
                 About
+              </Link>
+              <Link 
+                to="/case-studies"
+                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Case Studies
               </Link>
               <Button 
                 variant="cta"
