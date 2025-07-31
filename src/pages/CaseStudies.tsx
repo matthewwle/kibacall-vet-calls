@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 const CaseStudies = () => {
   const handleBookConsultation = () => {
-    window.open('https://calendly.com/kibacall/consultation', '_blank');
+    window.open('https://calendly.com/kibacall-consultation/30min?back=1', '_blank');
   };
 
   const caseStudies = [

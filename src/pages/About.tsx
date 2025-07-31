@@ -7,7 +7,7 @@ import kibacallLogo from "@/assets/KibacallLogo.png";
 
 const About = () => {
   const scrollToConsultation = () => {
-    window.open('https://calendly.com/kibacall-demo', '_blank');
+    window.open('https://calendly.com/kibacall-consultation/30min?back=1', '_blank');
   };
 
   return (

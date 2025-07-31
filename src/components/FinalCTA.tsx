@@ -4,7 +4,7 @@ import { Calendar, ArrowRight } from "lucide-react";
 const FinalCTA = () => {
   const handleBookConsultation = () => {
     // This would typically open a calendar booking widget or redirect to a booking page
-    window.open('https://calendly.com/kibacall-consultation', '_blank');
+    window.open('https://calendly.com/kibacall-consultation/30min?back=1', '_blank');
   };
 
   return (
