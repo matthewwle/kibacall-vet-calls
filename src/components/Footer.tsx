@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Heart } from "lucide-react";
+import kibacallLogoWhite from "@/assets/KibacallLogoWhite.png";
 
 const Footer = () => {
   return (
@@ -8,9 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-brand-teal rounded-lg flex items-center justify-center">
-                <Phone className="w-5 h-5 text-white" />
-              </div>
+              <img src={kibacallLogoWhite} alt="Kibacall Logo" className="w-8 h-8" />
               <span className="font-heading text-2xl font-bold">
                 Kibacall
               </span>
@@ -22,15 +21,15 @@ const Footer = () => {
             <div className="flex flex-col gap-2 text-white/80">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span className="font-body">hello@kibacall.com</span>
+                <span className="font-body">info@kibacall.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span className="font-body">1-800-KIBACALL</span>
+                <span className="font-body">626-250-9625</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span className="font-body">Austin, Texas</span>
+                <span className="font-body">San Francisco, CA</span>
               </div>
             </div>
           </div>
@@ -61,7 +60,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="font-body text-white/60 text-sm">
-            © 2024 Kibacall. All rights reserved.
+            © 2025 Kibacall. All rights reserved.
           </p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <a href="#privacy" className="font-body text-white/60 text-sm hover:text-brand-yellow transition-colors">

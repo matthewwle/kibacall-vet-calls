@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import aiReceptionistHero from "@/assets/ai-receptionist-hero-teal.jpg";
+import kcMainGraphic from "@/assets/KC_Main_Graphic.png";
 
 const Hero = () => {
   const scrollToConsultation = () => {
@@ -13,10 +13,12 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="text-center lg:text-left">
-            <h1 className="font-heading text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Your Veterinary Clinic's{" "}
-              <span className="text-primary">24/7 AI Call Handler</span>
-              —Book More Appointments, Reduce No‑Shows
+            <h1 className="font-heading text-3xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+              Never Miss a Call Again
+              <br />
+              <span className="text-primary">Your 24/7 AI Veterinary Front Desk Assistant</span>
+              <br />
+              Book More Appointments, Reduce No‑Shows
             </h1>
             <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
               Kibacall answers every call, collects client and pet info, sends reminders, 
@@ -28,14 +30,14 @@ const Hero = () => {
               onClick={scrollToConsultation}
               className="text-lg px-8 py-4"
             >
-              Book a Free Consultation
+              Book my Free Demo
             </Button>
           </div>
 
           {/* Right visuals */}
           <div className="relative flex justify-center">
             <img 
-              src={aiReceptionistHero} 
+              src={kcMainGraphic} 
               alt="Friendly AI receptionist taking calls for veterinary clinic" 
               className="w-full max-w-lg h-auto rounded-2xl shadow-2xl"
             />
