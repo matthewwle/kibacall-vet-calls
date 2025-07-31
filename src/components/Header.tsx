@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import kibacallLogo from "@/assets/KibacallLogo.png";
+import { Link } from "react-router-dom";
+import dogLogo from "@/assets/dog-logo-outline.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,14 +18,14 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 flex items-center justify-center">
-              <img src={kibacallLogo} alt="Kibacall Logo" className="w-8 h-8" />
+              <img src={dogLogo} alt="Kibacall Logo" className="w-8 h-8" style={{ filter: 'hue-rotate(180deg) saturate(1.2) brightness(0.8)' }} />
             </div>
             <span className="font-heading text-2xl font-bold text-foreground">
               Kibacall
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -34,6 +35,12 @@ const Header = () => {
             >
               Features
             </button>
+            <Link 
+              to="/case-studies"
+              className="font-body text-foreground hover:text-primary transition-colors"
+            >
+              Case Studies
+            </Link>
             <button
               onClick={() => scrollToSection('testimonials')}
               className="font-body text-foreground hover:text-primary transition-colors"
@@ -77,6 +84,12 @@ const Header = () => {
               >
                 Features
               </button>
+              <Link 
+                to="/case-studies"
+                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                Case Studies
+              </Link>
               <button
                 onClick={() => scrollToSection('testimonials')}
                 className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
