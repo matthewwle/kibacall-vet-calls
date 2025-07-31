@@ -41,6 +41,12 @@ const Header = () => {
             >
               Case Studies
             </Link>
+            <Link 
+              to="/about"
+              className="font-body text-foreground hover:text-primary transition-colors"
+            >
+              About
+            </Link>
           </nav>
 
           {/* Desktop CTA */}
@@ -77,6 +83,12 @@ const Header = () => {
                 className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
               >
                 Case Studies
+              </Link>
+              <Link 
+                to="/about"
+                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                About
               </Link>
               <Button 
                 variant="cta"
