@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Zap, Users } from "lucide-react";
+import Header from "@/components/Header";
 import kibacallLogo from "@/assets/KibacallLogo.png";
 
 const About = () => {
@@ -10,6 +11,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 py-20 lg:py-32">
         <div className="absolute inset-0 opacity-5">
