@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import dogLogo from "@/assets/dog-logo-outline.png";
+import kibacallLogo from "@/assets/KibacallLogo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8 flex items-center justify-center">
-              <img src={dogLogo} alt="Kibacall Logo" className="w-8 h-8" style={{ filter: 'hue-rotate(180deg) saturate(1.2) brightness(0.8)' }} />
+              <img src={kibacallLogo} alt="Kibacall Logo" className="w-8 h-8" />
             </div>
             <span className="font-heading text-2xl font-bold text-foreground">
               Kibacall
@@ -29,30 +29,18 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <button
-              onClick={() => scrollToSection('features')}
+            <Link 
+              to="/"
               className="font-body text-foreground hover:text-primary transition-colors"
             >
-              Features
-            </button>
+              Home
+            </Link>
             <Link 
               to="/case-studies"
               className="font-body text-foreground hover:text-primary transition-colors"
             >
               Case Studies
             </Link>
-            <button
-              onClick={() => scrollToSection('testimonials')}
-              className="font-body text-foreground hover:text-primary transition-colors"
-            >
-              Testimonials
-            </button>
-            <button
-              onClick={() => scrollToSection('how-it-works')}
-              className="font-body text-foreground hover:text-primary transition-colors"
-            >
-              How It Works
-            </button>
           </nav>
 
           {/* Desktop CTA */}
@@ -78,30 +66,18 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border bg-background">
             <nav className="flex flex-col gap-4">
-              <button
-                onClick={() => scrollToSection('features')}
+              <Link 
+                to="/"
                 className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
               >
-                Features
-              </button>
+                Home
+              </Link>
               <Link 
                 to="/case-studies"
                 className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
               >
                 Case Studies
               </Link>
-              <button
-                onClick={() => scrollToSection('testimonials')}
-                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
-              >
-                Testimonials
-              </button>
-              <button
-                onClick={() => scrollToSection('how-it-works')}
-                className="font-body text-foreground hover:text-primary transition-colors text-left py-2"
-              >
-                How It Works
-              </button>
               <Button 
                 variant="cta"
                 onClick={() => scrollToSection('final-cta')}

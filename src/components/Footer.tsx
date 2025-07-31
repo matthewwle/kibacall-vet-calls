@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import kibacallLogoWhite from "@/assets/KibacallLogoWhite.png";
 
 const Footer = () => {
@@ -50,8 +51,7 @@ const Footer = () => {
             <h3 className="font-heading text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 font-body text-white/80">
               <li><a href="#blog" className="hover:text-brand-yellow transition-colors">Blog</a></li>
-              <li><a href="#case-studies" className="hover:text-brand-yellow transition-colors">Case Studies</a></li>
-              <li><a href="#api-docs" className="hover:text-brand-yellow transition-colors">API Documentation</a></li>
+              <li><Link to="/case-studies" className="hover:text-brand-yellow transition-colors">Case Studies</Link></li>
               <li><a href="#help" className="hover:text-brand-yellow transition-colors">Help Center</a></li>
             </ul>
           </div>
