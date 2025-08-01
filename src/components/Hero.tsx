@@ -14,7 +14,6 @@ const Hero = () => {
           {/* Left content */}
           <div className="text-center lg:text-left">
             <h1 className="font-heading text-3xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Never Miss a Call Again
               <br />
               <span className="text-primary">Your 24/7 AI Veterinary Front Desk Assistant</span>
               <br />
